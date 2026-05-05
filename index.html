@@ -4,73 +4,100 @@
     <title>Grace Maretsky | Portfolio</title>
 
     <style>
+        :root {
+            --purple: #6a0dad;
+            --dark-purple: #2b1d3a;
+            --light-purple: #f7f2ff;
+            --text: #2f2f2f;
+            --muted: #555;
+            --border: #e6dff2;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #ffffff;
-            color: #222;
+            color: var(--text);
+        }
+
+        .header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, #fbf8ff, #f2e9ff);
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+            color: var(--dark-purple);
+        }
+
+        .tagline {
+            color: var(--muted);
+            font-size: 18px;
         }
 
         .container {
             width: 80%;
+            max-width: 1100px;
             margin: auto;
-            padding: 40px 0;
-        }
-
-        h1 {
-            font-size: 40px;
-            margin-bottom: 5px;
-            color: #2b1d3a;
+            padding: 45px 0;
         }
 
         h2 {
-            color: #6a0dad;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 40px;
+            color: var(--dark-purple);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 45px;
+        }
+
+        h3 {
+            color: var(--dark-purple);
         }
 
         p {
-            color: #444;
-            line-height: 1.6;
+            color: var(--muted);
+            line-height: 1.7;
         }
 
         a {
-            color: #6a0dad;
+            color: var(--purple);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        .header {
-            text-align: center;
-            padding: 60px 0;
-            background: linear-gradient(135deg, #f5f0ff, #ffffff);
-            border-bottom: 1px solid #eee;
+        .links a {
+            display: inline-block;
+            margin: 8px 10px 8px 0;
+            padding: 9px 16px;
+            border: 1px solid var(--purple);
+            border-radius: 999px;
+            background-color: #ffffff;
+            color: var(--purple);
         }
 
-        .section {
-            margin-bottom: 40px;
+        .links a:hover {
+            background-color: var(--light-purple);
+            text-decoration: none;
         }
 
         .card {
-            background-color: #faf7ff;
-            padding: 20px;
-            margin-top: 15px;
-            border-radius: 8px;
-            border: 1px solid #eee;
+            background-color: var(--light-purple);
+            padding: 24px;
+            margin-top: 18px;
+            border-radius: 14px;
+            border: 1px solid var(--border);
         }
 
-        .links a {
+        .button-link {
             display: inline-block;
-            margin-right: 15px;
-            padding: 8px 14px;
-            border: 1px solid #6a0dad;
-            border-radius: 6px;
-            background-color: #ffffff;
+            margin-top: 8px;
+            margin-right: 12px;
         }
     </style>
 </head>
@@ -79,89 +106,65 @@
 
     <div class="header">
         <h1>Grace Maretsky</h1>
-        <p>Baseball Analytics | Data Visualization | Strategy</p>
+        <p class="tagline">Baseball Analytics | Data Visualization | Strategy</p>
     </div>
 
     <div class="container">
 
-        <div class="section">
-            <h2>Links</h2>
-            <div class="links">
-                <a href="https://diamonddynamicstool-g8un2yafdaotpa8qsu2csu.streamlit.app/" target="_blank">Tool</a>
-                <a href="https://github.com/gmaretsky?tab=repositories" target="_blank">GitHub</a>
-                <a href="https://gracemaretsky.substack.com/" target="_blank">Substack</a>
-                <a href="https://www.linkedin.com/in/grace-maretsky-671686239/" target="_blank">LinkedIn</a>
-                <a href="Grace_Maretsky_Resume.pdf">Resume</a>
-                <a href="https://public.tableau.com/app/profile/grace.maretsky6140/vizzes" target="_blank">Tableau</a>
-            </div>
+        <h2>Links</h2>
+        <div class="links">
+            <a href="https://diamonddynamicstool-g8un2yafdaotpa8qsu2csu.streamlit.app/" target="_blank">Diamond Dynamics Tool</a>
+            <a href="https://github.com/gmaretsky?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://gracemaretsky.substack.com/" target="_blank">Substack</a>
+            <a href="https://www.linkedin.com/in/grace-maretsky-671686239/" target="_blank">LinkedIn</a>
+            <a href="Resume_Grace_Maretsky.pdf" target="_blank">Resume</a>
+            <a href="https://public.tableau.com/app/profile/grace.maretsky6140/vizzes" target="_blank">Tableau</a>
         </div>
 
-        <div class="section">
-            <h2>Featured Project</h2>
-            <div class="card">
-                <h3>Diamond Dynamics Tool</h3>
-                <p>
-                A performance tracking tool designed to evaluate player consistency and adjustment trends over time,
-                translating game-by-game data into clear, actionable insights.
-                </p>
-                <p><a href="https://diamonddynamicstool-g8un2yafdaotpa8qsu2csu.streamlit.app/" target="_blank">View Tool</a></p>
-            </div>
-        </div>
+        <h2>Featured Work</h2>
 
-        <div class="section">
-            <h2>Projects</h2>
-
-            <div class="card">
-                <h3>Ben Rice Analysis</h3>
-                <p>
-                Analysis using the Diamond Dynamics framework to evaluate consistency and adjustment across a 21-game sample,
-                highlighting OPS baseline trends and recent performance movement.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Gavin Williams Analysis</h3>
-                <p>
-                Pitching-focused analysis examining how individual outings influence overall performance trends
-                through consistency and adjustment metrics.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>MLB Payroll & Wins</h3>
-                <p>
-                Tableau project analyzing payroll, win percentage, geographic spending patterns, and run differential
-                to explore how financial investment translates to on-field performance.
-                </p>
-                <p><a href="https://public.tableau.com/app/profile/grace.maretsky6140/vizzes" target="_blank">View Tableau Work</a></p>
-            </div>
-
-        </div>
-
-        <div class="section">
-            <h2>Writing</h2>
+        <div class="card">
+            <h3>Diamond Dynamics</h3>
             <p>
-            Diamond Dynamics blog covering player evaluation, projections, roster strategy, and market trends.
+                Baseball analytics brand focused on player evaluation, performance trends, and strategic insight.
+                Diamond Dynamics includes written analysis, visual reports, and an interactive tool built to evaluate
+                player consistency and adjustment over time.
             </p>
-            <p><a href="https://gracemaretsky.substack.com/" target="_blank">Read on Substack</a></p>
+            <a class="button-link" href="https://diamonddynamicstool-g8un2yafdaotpa8qsu2csu.streamlit.app/" target="_blank">View Tool</a>
+            <a class="button-link" href="https://gracemaretsky.substack.com/" target="_blank">Read Analysis</a>
         </div>
 
-        <div class="section">
-            <h2>About</h2>
+        <div class="card">
+            <h3>MLB Payroll & Wins</h3>
             <p>
+                Tableau project analyzing MLB payroll, win percentage, payroll rank, geographic spending patterns,
+                and run differential from 2011–2024 to evaluate how financial investment relates to on-field performance.
+            </p>
+            <a class="button-link" href="https://public.tableau.com/app/profile/grace.maretsky6140/viz/MLBPayrollWinsProject/MLBPayrollWinsDashboard?publish=yes" target="_blank">View Dashboard</a>
+        </div>
+
+        <h2>Writing</h2>
+        <div class="card">
+            <h3>Diamond Dynamics Blog</h3>
+            <p>
+                Baseball analysis focused on player evaluation, projections, roster strategy, market trends,
+                and the evolving relationship between data and decision-making.
+            </p>
+            <a class="button-link" href="https://gracemaretsky.substack.com/" target="_blank">Read on Substack</a>
+        </div>
+
+        <h2>About</h2>
+        <p>
             Background in Data Analytics with a focus on data visualization, performance analysis, and strategy.
             Focus on evaluating player performance through consistency and adjustment trends, translating complex metrics into clear,
             actionable insights that support decision-making.
             Interest in baseball operations environments where analytics, strategy, and communication intersect.
-            </p>
-        </div>
+        </p>
 
-        <div class="section">
-            <h2>Contact</h2>
-            <p>
-            Email: gmaretsky@outlook.com
-            </p>
-        </div>
+        <h2>Contact</h2>
+        <p>
+            Email: <a href="mailto:gmaretsky@outlook.com">gmaretsky@outlook.com</a>
+        </p>
 
     </div>
 
