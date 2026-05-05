@@ -1,6 +1,6 @@
 ## Portfolio
 
-Hi, I'm Grace Maretsky. This portfolio highlights my work in baseball analytics, including my Diamond Dynamics publication & tool, as well as data visualization projects.
+Hi, I'm Grace Maretsky. This portfolio highlights my work in baseball analytics, including my Diamond Dynamics publication & tool, resume and data visualization projects.
 
 Live site: https://gmaretsky.github.io
 
